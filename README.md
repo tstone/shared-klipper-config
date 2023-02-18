@@ -12,10 +12,12 @@ While these macros are setup in the way that I prefer, for my machines, you're w
 ```
 ssh you@machine
 cd ~
-git clone git@github.com:tstone/shared-klipper-config.git
+git clone https://github.com/tstone/shared-klipper-config.git
 cd shared-klipper-config
 ./install.sh
 ```
+
+⚠️ Moonraker requires that the repo be cloned with HTTPS instead of SSH.
 
 #### 2. Moonraker
 Add the following to `moonraker.conf`:
@@ -42,3 +44,14 @@ Add to `printer.cfg`:
 # To use specific macros add the path as:
 # [include nb.shared/macros/beep.cfg]
 ```
+
+#### 4. Optional Macros
+
+These macros will make use the following macros if they are defined:
+
+  * `_READY_DISPLAY` - Display mode when the printer is ready for the next action
+  * `_MESHING_DISPLAY` - Display mode when the printer is performing bed meshing
+  * `_HEATING_DISPLAY` - Display mode when the printer is heating
+  * `_COOLING_DISPLAY` - Display mode when the printer is cooling
+  * `_LOADING_DISPLAY` - Display mode when the printer is loading filament
+  * `_UNLOADING_DISPLAY` - Display mode when the printer is unloading filament
