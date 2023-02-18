@@ -17,13 +17,13 @@ verify_ready()
 setup_files()
 {
   mkdir -p "${INSTALL_PATH}"
-  cp -r "${SRC_DIR}" "${INSTALL_PATH}"
+  cp -r "${SRC_DIR}/shared-klipper-config/macros" "${INSTALL_PATH}/macros"
 
   # If git is being used by this machine, add shared to the gitignore
   if [ -d "${PRINTER_DATA_PATH}/.git" ]; then
     touch "${PRINTER_DATA_PATH}/.gitignore"
 
-    if [ cat .gitignore | grep "config/nb.shared/" | wc -l -eq "0"]; then
+    if [ $(cat .gitignore | grep "config/nb.shared/" | wc -l) -eq "0"]; then
       echo "config/nb.shared/" > "${PRINTER_DATA_PATH}/.gitignore"
     fi
   fi
