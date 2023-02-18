@@ -16,7 +16,8 @@ verify_ready()
 
 setup_files()
 {
-  mkdir -p "${INSTALL_PATH}"
+  # macros
+  mkdir -p "${INSTALL_PATH}/macros"
   cp -r "${SRC_DIR}/shared-klipper-config/macros" "${INSTALL_PATH}/macros"
 
   # If git is being used by this machine, add shared to the gitignore
