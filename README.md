@@ -23,10 +23,11 @@ cd shared-klipper-config
 Add the following to `moonraker.conf`:
 
 ```
-[update_manager client shared-klipper-config]
+[update_manager client nb.shared]
 type: git_repo
 path: ~/shared-klipper-config
 origin: https://github.com/tstone/shared-klipper-config.git
+primary_branch: main
 install_script: install.sh
 managed_services: klipper
 ```
