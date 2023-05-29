@@ -66,6 +66,8 @@ gcode:
 These macros will make use the following macros if they are defined:
 
   * `_READY_DISPLAY` - Display mode when the printer is ready for the next action
+  * `_HOMING_DISPLAY` - Display mode when the printer is homing
+  * `_PROBING_DISPLAY` - Display mode when the printer is probing
   * `_MESHING_DISPLAY` - Display mode when the printer is performing bed meshing
   * `_HEATING_DISPLAY` - Display mode when the printer is heating
   * `_COOLING_DISPLAY` - Display mode when the printer is cooling
