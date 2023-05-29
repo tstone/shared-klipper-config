@@ -74,6 +74,7 @@ These macros will make use the following macros if they are defined:
   * `_MOVE_PURGE_BUCKET` - Move toolhead over purge bucket or waste disposal
   * `SLEEP` - Put the printer to sleep
   * `WAKEUP` - Wake up the printer (opposite of sleep)
+  * `SET_LIGHTS` - Light control macro that takes a value 0.0 to 1.0
 
 # Features
   * Highly simplified menu
