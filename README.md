@@ -44,9 +44,6 @@ Add to `printer.cfg`:
 
 # To use specific macros add the path as:
 # [include nb.shared/macros/beep.cfg]
-
-# To use menus:
-# [include nb.shared/menus.cfg]
 ```
 
 #### 4. Configuration
