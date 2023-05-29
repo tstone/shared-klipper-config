@@ -46,7 +46,7 @@ Add to `printer.cfg`:
 # [include nb.shared/macros/beep.cfg]
 
 # To use menus:
-# [include nb.shared/menus.cfg]
+# [include nb.shared/macros/menus.cfg]
 ```
 
 #### 4. Configuration
