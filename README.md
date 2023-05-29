@@ -46,7 +46,22 @@ Add to `printer.cfg`:
 # [include nb.shared/macros/beep.cfg]
 ```
 
-#### 4. Optional Macros
+#### 4. Configuration
+```
+[gcode_macro _nb_config]
+variable_center_x: 125
+variable_center_y: 125
+variable_front_y: 0
+variable_back_y: 250
+
+# Z height which is safe to move the toolhead about
+variable_safe_z: 15
+# Z that is preferred for working on the printer
+variable_service_z: 50
+gcode:
+```
+
+#### 5. Optional Macros
 
 These macros will make use the following macros if they are defined:
 
@@ -56,3 +71,5 @@ These macros will make use the following macros if they are defined:
   * `_COOLING_DISPLAY` - Display mode when the printer is cooling
   * `_LOADING_DISPLAY` - Display mode when the printer is loading filament
   * `_UNLOADING_DISPLAY` - Display mode when the printer is unloading filament
+  * `SLEEP` - Put the printer to sleep
+  * `WAKEUP` - Wake up the printer (opposite of sleep)
