@@ -19,6 +19,7 @@ setup_files()
   # macros
   mkdir -p "${INSTALL_PATH}"
   ln -sf "${SRC_DIR}/macros" "${INSTALL_PATH}"
+  ln -sf "${SRC_DIR}/menus" "${INSTALL_PATH}"
 
   # If git is being used by this machine, add shared to the gitignore
   if [ -d "${PRINTER_DATA_PATH}/.git" ]; then
