@@ -74,6 +74,7 @@ These macros will make use the following macros if they are defined:
   * `_COOLING_DISPLAY` - Display mode when the printer is cooling
   * `_LOADING_DISPLAY` - Display mode when the printer is loading filament
   * `_UNLOADING_DISPLAY` - Display mode when the printer is unloading filament
+  * `_MOVE_PURGE_BUCKET` - Move toolhead over purge bucket or waste disposal
   * `SLEEP` - Put the printer to sleep
   * `WAKEUP` - Wake up the printer (opposite of sleep)
 
