@@ -76,3 +76,9 @@ These macros will make use the following macros if they are defined:
   * `_UNLOADING_DISPLAY` - Display mode when the printer is unloading filament
   * `SLEEP` - Put the printer to sleep
   * `WAKEUP` - Wake up the printer (opposite of sleep)
+
+# Features
+  * Highly simplified menu
+  * All menu items beep to confirm selection
+  * All menu items exit the menu to avoid the tedious process of existing a sub menu
+  * Menus limited to 1 depth deep
